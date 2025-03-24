@@ -1,0 +1,21 @@
+{
+  "name": "小猫扭蛋机",
+  "short_name": "扭蛋机",
+  "description": "一个可爱的小猫扭蛋机应用",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fff5e6",
+  "theme_color": "#ff7e4a",
+  "icons": [
+    {
+      "src": "https://i0.hdslb.com/bfs/article/b7f68aac82c494ccb1cbf27e5c75b58f428358239.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "https://i0.hdslb.com/bfs/article/b7f68aac82c494ccb1cbf27e5c75b58f428358239.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}

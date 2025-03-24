@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>小猫扭蛋机管理</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="小猫扭蛋机管理">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <div class="container admin-container">
+        <h1>小猫扭蛋机管理</h1>
+        <div class="admin-section">
+            <h2>修改余额</h2>
+            <div class="balance-form">
+                <p>当前余额: <span id="admin-balance">0</span> 硬币</p>
+                <input type="number" id="balance-amount" placeholder="输入数量">
+                <button id="add-balance">增加</button>
+                <button id="reduce-balance">减少</button>
+            </div>
+        </div>
+        <div class="admin-section">
+            <h2>管理图片</h2>
+            <div class="image-form">
+                <input type="text" id="image-url" placeholder="图片URL地址">
+                <input type="text" id="image-description" placeholder="图片描述">
+                <button id="add-image">添加图片</button>
+            </div>
+            <div id="image-list" class="image-list">
+                <!-- 图片列表将在这里显示 -->
+            </div>
+        </div>
+        <div class="admin-section">
+            <h2>图片库</h2>
+            <div id="image-gallery" class="image-gallery">
+                <!-- 图片库将在这里显示 -->
+            </div>
+        </div>
+        <div class="admin-section">
+            <h2>扭蛋历史记录</h2>
+            <div id="admin-history" class="history-list">
+                <!-- 历史记录将在这里显示 -->
+            </div>
+        </div>
+        <div class="admin-section">
+            <h2>系统操作</h2>
+            <button id="reset-machine" class="danger-button">重置扭蛋机</button>
+            <p class="warning-text">警告：重置将清空所有历史记录，但会保留图片库和余额。</p>
+        </div>
+        <a href="index.html" class="back-link">返回扭蛋机</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>小猫扭蛋机</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="小猫扭蛋机">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <h1>小猫扭蛋机</h1>
+        <div class="balance-container">
+            <p>当前余额: <span id="balance">100</span> 硬币</p>
+        </div>
+        <div class="gashapon-machine">
+            <img src="https://i0.hdslb.com/bfs/article/b7f68aac82c494ccb1cbf27e5c75b58f428358239.jpg" alt="扭蛋机" class="machine-img">
+            <button id="draw-button">扭蛋 (消耗10硬币)</button>
+        </div>
+        <div id="result" class="result-container" style="display: none;">
+            <div class="result-content">
+                <h2>恭喜你获得:</h2>
+                <div class="image-container">
+                    <img id="result-image" src="" alt="扭蛋结果">
+                </div>
+                <p id="result-text"></p>
+                <div class="result-buttons">
+                    <button id="download-result" class="download-button">下载图片</button>
+                    <button id="close-result">关闭</button>
+                </div>
+            </div>
+        </div>        
+        <div class="history-container">
+            <h2>我的收藏</h2>
+            <div id="history" class="history-items"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
